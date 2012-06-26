@@ -140,39 +140,33 @@
     // and call the slideThenHide function
     [self slideThenHide];
 	
-	if (YES)
-	{
+	if ([appDelegate.contentViewController isKindOfClass:[PanelAViewController class]]) {
 		[self performSegueWithIdentifier:@"toPanelA" sender:self];
 	}
-	else
-	{
+	else {
 		[self performSegueWithIdentifier:@"toPanelB" sender:self];
 	}
 }
 
-
 - (void) panGestureMoveAround:(UIPanGestureRecognizer*)gesture;
 {
     UIView* piece = [gesture view];
+
     [self adjustAnchorPointForGestureRecognizer:gesture];
     
-    if ([gesture state] == UIGestureRecognizerStateBegan || [gesture state] == UIGestureRecognizerStateChanged)
-	{
+    if ([gesture state] == UIGestureRecognizerStateBegan || [gesture state] == UIGestureRecognizerStateChanged) {
         CGPoint translation = [gesture translationInView:[piece superview]];
         
         [piece setCenter:CGPointMake([piece center].x + translation.x, [piece center].y)];
         [gesture setTranslation:CGPointZero inView:[piece superview]];
     }
-    else if ([gesture state] == UIGestureRecognizerStateEnded)
-	{
+    else if ([gesture state] == UIGestureRecognizerStateEnded) {
         [self slideThenHide];
 
-		if (YES)
-		{
+		if ([appDelegate.contentViewController isKindOfClass:[PanelAViewController class]]) {
 			[self performSegueWithIdentifier:@"toPanelA" sender:self];
 		}
-		else
-		{
+		else {
 			[self performSegueWithIdentifier:@"toPanelB" sender:self];
 		}
 	}
@@ -180,8 +174,7 @@
 
 - (void) adjustAnchorPointForGestureRecognizer:(UIGestureRecognizer*)gestureRecognizer
 {
-    if (gestureRecognizer.state == UIGestureRecognizerStateBegan)
-	{
+    if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
         UIView *piece = gestureRecognizer.view;
         CGPoint locationInView = [gestureRecognizer locationInView:piece];
         CGPoint locationInSuperview = [gestureRecognizer locationInView:piece.superview];
@@ -221,25 +214,23 @@
 - (UITableViewCell*) tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
 	static NSString* sContentTypeCellIdentifier = @"ContentTypeTableCell";
-	NSArray* titles = [NSArray arrayWithObjects:@"Panel A", @"Panel B", nil];
-	
+
 	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:sContentTypeCellIdentifier];
 	
+	NSArray* titles = [NSArray arrayWithObjects:@"Panel A", @"Panel B", nil];
 	cell.textLabel.text = NSLocalizedString([titles objectAtIndex:indexPath.row], nil);
 	
 	return cell;
 }
 
-- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void) tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
 {
 	[self.contentTableView deselectRowAtIndexPath:indexPath animated:YES];
 	
-	if (indexPath.row == CONTENT_TYPE_PANEL_A_INDEX)
-	{
+	if (indexPath.row == CONTENT_TYPE_PANEL_A_INDEX) {
 		[self showPanelAViewController];
 	}
-	else if (indexPath.row == CONTENT_TYPE_PANEL_B_INDEX)
-	{
+	else if (indexPath.row == CONTENT_TYPE_PANEL_B_INDEX) {
 		[self showPanelBViewController];
 	}
 }

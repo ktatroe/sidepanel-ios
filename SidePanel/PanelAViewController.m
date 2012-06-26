@@ -8,9 +8,6 @@
 
 #import "PanelAViewController.h"
 
-@interface PanelAViewController ()
-
-@end
 
 @implementation PanelAViewController
 
