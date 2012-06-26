@@ -12,9 +12,15 @@
 		EDB8BFEC159A0B0E00A41259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB8BFEB159A0B0E00A41259 /* CoreGraphics.framework */; };
 		EDB8BFF2159A0B0E00A41259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDB8BFF0159A0B0E00A41259 /* InfoPlist.strings */; };
 		EDB8BFF4159A0B0E00A41259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFF3159A0B0E00A41259 /* main.m */; };
-		EDB8BFF8159A0B0E00A41259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFF7159A0B0E00A41259 /* AppDelegate.m */; };
+		EDB8BFF8159A0B0E00A41259 /* SidePanelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFF7159A0B0E00A41259 /* SidePanelAppDelegate.m */; };
 		EDB8BFFB159A0B0E00A41259 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB8BFF9159A0B0E00A41259 /* MainStoryboard.storyboard */; };
-		EDB8BFFE159A0B0E00A41259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFFD159A0B0E00A41259 /* ViewController.m */; };
+		EDB8C006159A0B3400A41259 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB8C004159A0B3400A41259 /* list.png */; };
+		EDB8C007159A0B3400A41259 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB8C005159A0B3400A41259 /* list@2x.png */; };
+		EDB8C00A159A0B4600A41259 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8C009159A0B4600A41259 /* MenuViewController.m */; };
+		EDB8C00D159A0B6300A41259 /* SlideoutStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8C00C159A0B6300A41259 /* SlideoutStoryboardSegue.m */; };
+		EDB8C014159A0D8400A41259 /* PanelAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8C013159A0D8400A41259 /* PanelAViewController.m */; };
+		EDB8C017159A0D9500A41259 /* PanelBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8C016159A0D9400A41259 /* PanelBViewController.m */; };
+		EDB8C01F159A163900A41259 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB8C01E159A163900A41259 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +28,24 @@
 		EDB8BFE7159A0B0E00A41259 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EDB8BFE9159A0B0E00A41259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDB8BFEB159A0B0E00A41259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EDB8BFEF159A0B0E00A41259 /* SidePanel-Info.plist */ = {isa = PBXFileReference; path = "SidePanel-Info.plist"; sourceTree = "<group>"; };
+		EDB8BFEF159A0B0E00A41259 /* SidePanel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SidePanel-Info.plist"; sourceTree = "<group>"; };
 		EDB8BFF1159A0B0E00A41259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EDB8BFF3159A0B0E00A41259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EDB8BFF5159A0B0E00A41259 /* SidePanel-Prefix.pch */ = {isa = PBXFileReference; path = "SidePanel-Prefix.pch"; sourceTree = "<group>"; };
-		EDB8BFF6159A0B0E00A41259 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		EDB8BFF7159A0B0E00A41259 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDB8BFF5159A0B0E00A41259 /* SidePanel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidePanel-Prefix.pch"; sourceTree = "<group>"; };
+		EDB8BFF6159A0B0E00A41259 /* SidePanelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidePanelAppDelegate.h; sourceTree = "<group>"; };
+		EDB8BFF7159A0B0E00A41259 /* SidePanelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidePanelAppDelegate.m; sourceTree = "<group>"; };
 		EDB8BFFA159A0B0E00A41259 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		EDB8BFFC159A0B0E00A41259 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		EDB8BFFD159A0B0E00A41259 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDB8C004159A0B3400A41259 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		EDB8C005159A0B3400A41259 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		EDB8C008159A0B4600A41259 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		EDB8C009159A0B4600A41259 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		EDB8C00B159A0B6300A41259 /* SlideoutStoryboardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideoutStoryboardSegue.h; sourceTree = "<group>"; };
+		EDB8C00C159A0B6300A41259 /* SlideoutStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideoutStoryboardSegue.m; sourceTree = "<group>"; };
+		EDB8C012159A0D8400A41259 /* PanelAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelAViewController.h; sourceTree = "<group>"; };
+		EDB8C013159A0D8400A41259 /* PanelAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelAViewController.m; sourceTree = "<group>"; };
+		EDB8C015159A0D9400A41259 /* PanelBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelBViewController.h; sourceTree = "<group>"; };
+		EDB8C016159A0D9400A41259 /* PanelBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelBViewController.m; sourceTree = "<group>"; };
+		EDB8C01E159A163900A41259 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB8C01F159A163900A41259 /* QuartzCore.framework in Frameworks */,
 				EDB8BFE8159A0B0E00A41259 /* UIKit.framework in Frameworks */,
 				EDB8BFEA159A0B0E00A41259 /* Foundation.framework in Frameworks */,
 				EDB8BFEC159A0B0E00A41259 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +86,7 @@
 				EDB8BFE7159A0B0E00A41259 /* UIKit.framework */,
 				EDB8BFE9159A0B0E00A41259 /* Foundation.framework */,
 				EDB8BFEB159A0B0E00A41259 /* CoreGraphics.framework */,
+				EDB8C01E159A163900A41259 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,11 +94,11 @@
 		EDB8BFED159A0B0E00A41259 /* SidePanel */ = {
 			isa = PBXGroup;
 			children = (
-				EDB8BFF6159A0B0E00A41259 /* AppDelegate.h */,
-				EDB8BFF7159A0B0E00A41259 /* AppDelegate.m */,
-				EDB8BFF9159A0B0E00A41259 /* MainStoryboard.storyboard */,
-				EDB8BFFC159A0B0E00A41259 /* ViewController.h */,
-				EDB8BFFD159A0B0E00A41259 /* ViewController.m */,
+				EDB8BFF6159A0B0E00A41259 /* SidePanelAppDelegate.h */,
+				EDB8BFF7159A0B0E00A41259 /* SidePanelAppDelegate.m */,
+				EDB8C019159A0E3200A41259 /* Controllers */,
+				EDB8C01C159A0E6100A41259 /* Assets */,
+				EDB8C01D159A0E6E00A41259 /* UX */,
 				EDB8BFEE159A0B0E00A41259 /* Supporting Files */,
 			);
 			path = SidePanel;
@@ -96,6 +113,62 @@
 				EDB8BFF5159A0B0E00A41259 /* SidePanel-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDB8C018159A0E1D00A41259 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8C00B159A0B6300A41259 /* SlideoutStoryboardSegue.h */,
+				EDB8C00C159A0B6300A41259 /* SlideoutStoryboardSegue.m */,
+				EDB8C008159A0B4600A41259 /* MenuViewController.h */,
+				EDB8C009159A0B4600A41259 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		EDB8C019159A0E3200A41259 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8C018159A0E1D00A41259 /* Menu */,
+				EDB8C01A159A0E4A00A41259 /* Panel A */,
+				EDB8C01B159A0E5200A41259 /* Panel B */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EDB8C01A159A0E4A00A41259 /* Panel A */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8C012159A0D8400A41259 /* PanelAViewController.h */,
+				EDB8C013159A0D8400A41259 /* PanelAViewController.m */,
+			);
+			name = "Panel A";
+			sourceTree = "<group>";
+		};
+		EDB8C01B159A0E5200A41259 /* Panel B */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8C015159A0D9400A41259 /* PanelBViewController.h */,
+				EDB8C016159A0D9400A41259 /* PanelBViewController.m */,
+			);
+			name = "Panel B";
+			sourceTree = "<group>";
+		};
+		EDB8C01C159A0E6100A41259 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8C004159A0B3400A41259 /* list.png */,
+				EDB8C005159A0B3400A41259 /* list@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		EDB8C01D159A0E6E00A41259 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8BFF9159A0B0E00A41259 /* MainStoryboard.storyboard */,
+			);
+			name = UX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +223,8 @@
 			files = (
 				EDB8BFF2159A0B0E00A41259 /* InfoPlist.strings in Resources */,
 				EDB8BFFB159A0B0E00A41259 /* MainStoryboard.storyboard in Resources */,
+				EDB8C006159A0B3400A41259 /* list.png in Resources */,
+				EDB8C007159A0B3400A41259 /* list@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB8BFF4159A0B0E00A41259 /* main.m in Sources */,
-				EDB8BFF8159A0B0E00A41259 /* AppDelegate.m in Sources */,
-				EDB8BFFE159A0B0E00A41259 /* ViewController.m in Sources */,
+				EDB8BFF8159A0B0E00A41259 /* SidePanelAppDelegate.m in Sources */,
+				EDB8C00A159A0B4600A41259 /* MenuViewController.m in Sources */,
+				EDB8C00D159A0B6300A41259 /* SlideoutStoryboardSegue.m in Sources */,
+				EDB8C014159A0D8400A41259 /* PanelAViewController.m in Sources */,
+				EDB8C017159A0D9500A41259 /* PanelBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +352,7 @@
 				EDB8C003159A0B0E00A41259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

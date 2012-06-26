@@ -6,14 +6,23 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
+#import "SidePanelAppDelegate.h"
+#import "MenuViewController.h"
 
-@implementation AppDelegate
+
+@implementation SidePanelAppDelegate
 
 @synthesize window = _window;
 
+@synthesize contentViewController;
+@synthesize menuViewController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+	self.menuViewController = [storyboard instantiateViewControllerWithIdentifier:@"menuViewController"];
+
     // Override point for customization after application launch.
     return YES;
 }
@@ -43,6 +52,30 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void) showSideMenu
+{    
+    // before swaping the views, we'll take a "screenshot" of the current view
+    // by rendering its CALayer into the an ImageContext then saving that off to a UIImage
+	UIView* targetView = self.contentViewController.navigationController.view;
+    CGSize viewSize = targetView.bounds.size;
+    UIGraphicsBeginImageContextWithOptions(viewSize, NO, 0.0);
+    [targetView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    // Read the UIImage object
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    // pass this image off to the MenuViewController then swap it in as the rootViewController
+    self.menuViewController.screenShotImage = image;
+    self.window.rootViewController = self.menuViewController;
+}
+
+-(void) hideSideMenu
+{
+    // all animation takes place elsewhere. When this gets called just swap the contentViewController in
+    self.window.rootViewController = self.contentViewController;
 }
 
 @end
