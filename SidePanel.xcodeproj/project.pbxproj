@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDB8BFE8159A0B0E00A41259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB8BFE7159A0B0E00A41259 /* UIKit.framework */; };
+		EDB8BFEA159A0B0E00A41259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB8BFE9159A0B0E00A41259 /* Foundation.framework */; };
+		EDB8BFEC159A0B0E00A41259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB8BFEB159A0B0E00A41259 /* CoreGraphics.framework */; };
+		EDB8BFF2159A0B0E00A41259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDB8BFF0159A0B0E00A41259 /* InfoPlist.strings */; };
+		EDB8BFF4159A0B0E00A41259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFF3159A0B0E00A41259 /* main.m */; };
+		EDB8BFF8159A0B0E00A41259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFF7159A0B0E00A41259 /* AppDelegate.m */; };
+		EDB8BFFB159A0B0E00A41259 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB8BFF9159A0B0E00A41259 /* MainStoryboard.storyboard */; };
+		EDB8BFFE159A0B0E00A41259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8BFFD159A0B0E00A41259 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EDB8BFE3159A0B0E00A41259 /* SidePanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidePanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB8BFE7159A0B0E00A41259 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDB8BFE9159A0B0E00A41259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDB8BFEB159A0B0E00A41259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EDB8BFEF159A0B0E00A41259 /* SidePanel-Info.plist */ = {isa = PBXFileReference; path = "SidePanel-Info.plist"; sourceTree = "<group>"; };
+		EDB8BFF1159A0B0E00A41259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDB8BFF3159A0B0E00A41259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDB8BFF5159A0B0E00A41259 /* SidePanel-Prefix.pch */ = {isa = PBXFileReference; path = "SidePanel-Prefix.pch"; sourceTree = "<group>"; };
+		EDB8BFF6159A0B0E00A41259 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDB8BFF7159A0B0E00A41259 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDB8BFFA159A0B0E00A41259 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EDB8BFFC159A0B0E00A41259 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		EDB8BFFD159A0B0E00A41259 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDB8BFE0159A0B0E00A41259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB8BFE8159A0B0E00A41259 /* UIKit.framework in Frameworks */,
+				EDB8BFEA159A0B0E00A41259 /* Foundation.framework in Frameworks */,
+				EDB8BFEC159A0B0E00A41259 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDB8BFD8159A0B0E00A41259 = {
+			isa = PBXGroup;
+			children = (
+				EDB8BFED159A0B0E00A41259 /* SidePanel */,
+				EDB8BFE6159A0B0E00A41259 /* Frameworks */,
+				EDB8BFE4159A0B0E00A41259 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDB8BFE4159A0B0E00A41259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8BFE3159A0B0E00A41259 /* SidePanel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDB8BFE6159A0B0E00A41259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8BFE7159A0B0E00A41259 /* UIKit.framework */,
+				EDB8BFE9159A0B0E00A41259 /* Foundation.framework */,
+				EDB8BFEB159A0B0E00A41259 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDB8BFED159A0B0E00A41259 /* SidePanel */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8BFF6159A0B0E00A41259 /* AppDelegate.h */,
+				EDB8BFF7159A0B0E00A41259 /* AppDelegate.m */,
+				EDB8BFF9159A0B0E00A41259 /* MainStoryboard.storyboard */,
+				EDB8BFFC159A0B0E00A41259 /* ViewController.h */,
+				EDB8BFFD159A0B0E00A41259 /* ViewController.m */,
+				EDB8BFEE159A0B0E00A41259 /* Supporting Files */,
+			);
+			path = SidePanel;
+			sourceTree = "<group>";
+		};
+		EDB8BFEE159A0B0E00A41259 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8BFEF159A0B0E00A41259 /* SidePanel-Info.plist */,
+				EDB8BFF0159A0B0E00A41259 /* InfoPlist.strings */,
+				EDB8BFF3159A0B0E00A41259 /* main.m */,
+				EDB8BFF5159A0B0E00A41259 /* SidePanel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDB8BFE2159A0B0E00A41259 /* SidePanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB8C001159A0B0E00A41259 /* Build configuration list for PBXNativeTarget "SidePanel" */;
+			buildPhases = (
+				EDB8BFDF159A0B0E00A41259 /* Sources */,
+				EDB8BFE0159A0B0E00A41259 /* Frameworks */,
+				EDB8BFE1159A0B0E00A41259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SidePanel;
+			productName = SidePanel;
+			productReference = EDB8BFE3159A0B0E00A41259 /* SidePanel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDB8BFDA159A0B0E00A41259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EDB8BFDD159A0B0E00A41259 /* Build configuration list for PBXProject "SidePanel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EDB8BFD8159A0B0E00A41259;
+			productRefGroup = EDB8BFE4159A0B0E00A41259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDB8BFE2159A0B0E00A41259 /* SidePanel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDB8BFE1159A0B0E00A41259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB8BFF2159A0B0E00A41259 /* InfoPlist.strings in Resources */,
+				EDB8BFFB159A0B0E00A41259 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDB8BFDF159A0B0E00A41259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB8BFF4159A0B0E00A41259 /* main.m in Sources */,
+				EDB8BFF8159A0B0E00A41259 /* AppDelegate.m in Sources */,
+				EDB8BFFE159A0B0E00A41259 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDB8BFF0159A0B0E00A41259 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB8BFF1159A0B0E00A41259 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDB8BFF9159A0B0E00A41259 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB8BFFA159A0B0E00A41259 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDB8BFFF159A0B0E00A41259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDB8C000159A0B0E00A41259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDB8C002159A0B0E00A41259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidePanel/SidePanel-Prefix.pch";
+				INFOPLIST_FILE = "SidePanel/SidePanel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDB8C003159A0B0E00A41259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidePanel/SidePanel-Prefix.pch";
+				INFOPLIST_FILE = "SidePanel/SidePanel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDB8BFDD159A0B0E00A41259 /* Build configuration list for PBXProject "SidePanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB8BFFF159A0B0E00A41259 /* Debug */,
+				EDB8C000159A0B0E00A41259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB8C001159A0B0E00A41259 /* Build configuration list for PBXNativeTarget "SidePanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB8C002159A0B0E00A41259 /* Debug */,
+				EDB8C003159A0B0E00A41259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDB8BFDA159A0B0E00A41259 /* Project object */;
+}
