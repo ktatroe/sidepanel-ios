@@ -1,8 +1,8 @@
 //
 //  SlideoutStoryboardSegue.m
-//  Elias
+//  SidePanel
 //
-//  Created by Kevin Tatroe on 2/23/12.
+//  Created by Kevin Tatroe
 //  Copyright (c) 2012 Kevin Tatroe. All rights reserved.
 //
 

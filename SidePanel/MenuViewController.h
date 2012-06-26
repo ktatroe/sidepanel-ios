@@ -1,9 +1,11 @@
 //
 //  MenuViewController.h
-//  SlideOutNavigationSample
+//  SidePanel
 //
-//  Created by Nick Harris on 2/3/12.
-//  Copyright (c) 2012 Sepia Labs. All rights reserved.
+//  Created by Kevin Tatroe
+//  Copyright (c) 2012 Kevin Tatroe. All rights reserved.
+//
+//	Based on code by Nick Harris, (c) 2012 Sepia Labs.
 //
 
 #import <UIKit/UIKit.h>
