@@ -13,7 +13,7 @@
 
 - (void) perform
 {
-    [[self sourceViewController] presentModalViewController:[self destinationViewController] animated:NO];
+    [[self sourceViewController] presentModalViewController:[self destinationViewController] animated:YES];
 }
 
 @end
